@@ -48,20 +48,13 @@ class Main
     args)
     {
         Scanner
-    entrée = new
-    Scanner( System. in );
-    double
-    taxeActuelle = entrée.nextDouble();
-    double
-    taxeFuture = entrée.nextDouble();
-    double
-    prixLégume = entrée.nextDouble();
+    entrée = new  Scanner( System. in );
+    double   taxeActuelle = entrée.nextDouble();
+    double   taxeFuture = entrée.nextDouble();
+    double prixLégume = entrée.nextDouble();
 
-    double
-    nouveauPrix = \
-        prixLégume / (1 + taxeActuelle / 100) * (1 + taxeFuture / 100);
-    nouveauPrix = (double)
-    round( nouveauPrix * 100 ) / 100;
+    double   nouveauPrix = \prixLégume / (1 + taxeActuelle / 100) * (1 + taxeFuture / 100);
+    nouveauPrix = (double)round( nouveauPrix * 100 ) / 100;
     System.out.println( nouveauPrix );
     }
     }
@@ -104,19 +97,11 @@ class Main
     class Main
 
         {
-            public
-        static
-        void
-        main( String[]
-        args)
+            public static void main( String[]   args)
         {
-            Scanner
-        entrée = new
-        Scanner( System. in );
-        int
-        sommeArgent = entrée.nextInt();
-        int
-        prixLivre = entrée.nextInt();
+         Scanner entrée = new Scanner( System. in );
+        int  sommeArgent = entrée.nextInt();
+        int prixLivre = entrée.nextInt();
         System.out.println( sommeArgent / prixLivre );
         }
         }
@@ -285,38 +270,22 @@ class Main
         # en java
         import algorea.Scanner;
 
-        class Main
-            {
-                public
-            static
-            void
-            main( String[]
-            args)
-            {
-                Scanner
-            entrée = new
-            Scanner( System. in );
-            int[]
-            deplacementInverse = {0, 2, 1, 3, 5, 4};
+        class Main {
+      Scanner entrée = new Scanner(System.in);
+        int[] deplacementInverse = { 0, 2, 1, 3, 5, 4 };
 
-            int
-            nbDeplacements = entrée.nextInt();
-            int[]
-            chemin = new
-            int[nbDeplacements];
+        int nbDeplacements = entrée.nextInt();
+        int[] chemin = new int[nbDeplacements];
 
-            for (int numero = 0; numero < nbDeplacements; numero = numero + 1)
-            {
-                chemin[numero] = entrée.nextInt();
-            }
+        for (int numero = 0; numero < nbDeplacements; numero = numero + 1) {
+            chemin[numero] = entrée.nextInt();
+        }
 
-            for (int numero = nbDeplacements-1; numero >= 0; numero = numero - 1)
-            {
+        for (int numero = nbDeplacements - 1; numero >= 0; numero = numero - 1) {
             int deplacement = chemin[numero];
             System.out.println(deplacementInverse[deplacement]);
-            }
-            }
-            }
+        }
+        }
         # ***************************************
 
         # Banquet municipal

@@ -1,4 +1,4 @@
-# niveau 2 algo du site france IOI
+# //correction java
 class Main {
 public static void main(String[] args) {
 System.out.println("Hello world!")
@@ -12,7 +12,7 @@ print( "Ma devise est 'Parler peu mais parler bien'." )
 print( "Je m'appelle Camthalion" )
 print( "Coucou !" )
 
-
+# //correction java
 class Main {
 public static void main(String[] args) {
 System.out.println("Coucou !")
@@ -42,13 +42,10 @@ chef
 tu
 reviendras !
 # ///////////////////////////////////////////////////////////////////////
-classMain
-{
-    public
-static
-void
-main( String[]
-args) {
+# ///////////////////////////////////////////////////////////////////////
+# //correction java
+classMain{
+    public static void main( String[] args) {
     System.out.println( "Tout droit tu grimperas," )
 System.out.println( "La clé tu trouveras," )
 System.out.println( "Habile tu seras," )
@@ -70,11 +67,12 @@ bas()
 bas()
 droite()
 # //////////////////////////////////////////////
+# //correction java
 import static
 
 algorea.Robot. *;
 
-
+# //correction java
 class Main {
 public static void main(String[] args) {
 haut()
@@ -143,7 +141,7 @@ import static
 
 algorea.Robot. *;
 
-
+# //correction java
 class Main {
 public static void main(String[] args) {
 deplacer(1, 2)
@@ -183,7 +181,7 @@ import static
 
 algorea.Robot. *;
 
-
+# //correction java
 class Main {
 public static void main(String[] args) {
 remplir(5)
@@ -205,7 +203,7 @@ for loop in range( 13 ):
 
 
 # // // // // // // // // // // // // /
-
+# //correction java
 class Main {
 public static void main(String[] args) {
 for (int loop = 1
@@ -238,7 +236,7 @@ import static
 
 algorea.Robot. *;
 
-
+# //correction java
 class Main {
 public static void main(String[] args) {
 gauche()
@@ -291,7 +289,7 @@ import static
 
 algorea.Robot. *;
 
-
+# //correction java
 class Main {
 public static void main(String[] args) {
 for (int loop = 1
@@ -321,7 +319,7 @@ import static
 
 algorea.Robot. *;
 
-
+# //correction java
 class Main {
 public static void main(String[] args) {
 for (int loop = 1
@@ -371,6 +369,7 @@ for loop in range( 20 ):
 
 
 # /////////////////////////////////////////////
+# //correction java
 class Main {
 public static void main(String[] args) {
 for (int loop = 1
@@ -409,7 +408,7 @@ import static
 
 algorea.Robot. *;
 
-
+# //correction java
 class Main {
 public static void main(String[] args) {
 for (int loop = 1
@@ -474,7 +473,7 @@ import static
 
 algorea.Robot. *;
 
-
+# //correction java
 class Main {
 public static void main(String[] args) {
 for (int loop = 1
@@ -584,7 +583,7 @@ import static
 
 algorea.Robot. *;
 
-
+# //correction java
 class Main {
 public static void main(String[] args) {
 haut() // Allers - retours sur les 9 lignes du haut,
@@ -693,6 +692,7 @@ print( "J'arrive !" )
 
 
 # /////////////////////////////
+# //correction java
 class Main {
 public static void main(String[] args) {
 int compte = 1;
@@ -736,6 +736,7 @@ print( "Décollage !" )
 
 
 # ////////////////////////////////
+# //correction java
 class Main {
 public static void main(String[] args) {
 int compte = 100;
@@ -858,6 +859,7 @@ for loop in range( 20 ):
 
 
 # //////////////////////////////////////////
+# //correction java
 class Main {
 public static void main(String[] args) {
 int ligne = 1;
@@ -887,7 +889,7 @@ print( 60 * 60 * 16 * nbJours
 
 import algorea.Scanner
 
-
+# //correction java
 class Main {
 static Scanner entrée = new Scanner(System.in )
 public static void main(String[] args) {
@@ -906,7 +908,7 @@ print( différence )
 
 import algorea.Scanner;
 
-
+# //correction java
 class Main {
 static Scanner entrée = new Scanner(System.in )
 public static void main(String[] args) {
@@ -926,7 +928,7 @@ for loop in range( nbLignes ):
 
 import algorea.Scanner
 
-
+# //correction java
 class Main {
 static Scanner entrée = new Scanner(System.in )
 public static void main(String[] args) {
@@ -949,7 +951,7 @@ for loop in range( tempMax - tempMin + 1 ):
 
     import algorea.Scanner;
 
-
+# //correction java
 class Main {
 static Scanner entrée = new Scanner(System.in )
 public static void main(String[] args) {
@@ -981,7 +983,7 @@ for loop in range( nbNombres ):
 
 import algorea.Scanner
 
-
+# //correction java
 class Main {
 static Scanner entrée = new Scanner(System.in )
 public static void main(String[] args) {
@@ -1015,7 +1017,7 @@ for iVendeur in range( nbVendeurs + 1 ):
 
 import algorea.Scanner
 
-
+# //correction java
 class Main {
 static Scanner entrée = new Scanner(System.in )
 public static void main(String[] args) {
@@ -1042,7 +1044,7 @@ print( totalKarvas )
 
 import algorea.Scanner
 
-
+# //correction java
 class Main {
 static Scanner entrée = new Scanner(System.in )
 public static void main(String[] args) {
@@ -1071,7 +1073,7 @@ print( volume )
 
 import algorea.Scanner
 
-
+# //correction java
 class Main {
 static Scanner entrée = new Scanner(System.in )
 public static void main(String[] args) {
@@ -1116,7 +1118,7 @@ for loop in range( nbKarvas ):
 
 import algorea.Scanner
 
-
+# //correction java
 class Main {
 static Scanner entrée = new Scanner(System.in )
 public static void main(String[] args) {
@@ -1140,7 +1142,7 @@ if nbPaquets * poidsPaquet > 105:
 
 import algorea.Scanner
 
-
+# //correction java
 class Main {
 static Scanner entrée = new Scanner(System.in )
 public static void main(String[] args) {
@@ -1164,7 +1166,7 @@ print( écart )
 
 import algorea.Scanner
 
-
+# //correction java
 class Main {
 static Scanner entrée = new Scanner(System.in )
 public static void main(String[] args) {
@@ -1197,7 +1199,7 @@ print( prix )
 
 import algorea.Scanner
 
-
+# //correction java
 class Main {
 static Scanner entrée = new Scanner(System.in )
 public static void main(String[] args) {
@@ -1229,7 +1231,7 @@ if superficieEvaran > superficieArignon + 10:
 
 import algorea.Scanner
 
-
+# //correction java
 class Main {
 static Scanner entrée = new Scanner(System.in )
 public static void main(String[] args) {
@@ -1260,7 +1262,7 @@ else:
 
 import algorea.Scanner
 
-
+# //correction java
 class Main {
 static Scanner entrée = new Scanner(System.in )
 public static void main(String[] args) {
@@ -1271,6 +1273,79 @@ System.out.println("Tarif réduit")
 System.out.println("Tarif plein")
 }
 }
+}
+# ////////////////////////////////////////////////////////////////////////////////////
+#=========================================================================================
+# Vous arrivez devant un pont que vous devez absolument emprunter pour arriver avant la 
+# nuit au village situé de l'autre côté de la rivière. Cependant, la traversée du pont 
+# n'est pas gratuite et le tarif dépend de votre chance au jeu. En effet, le gardien vous
+#  demande de lancer deux dés et le prix dépendra des valeurs que vous obtiendrez. 
+#  Vous décidez d'écrire un programme pour vérifier qu'il applique bien le bon tarif.
+# 
+# Ce que doit faire votre programme :
+# Votre programme doit lire deux entiers, compris entre 1 et 6, la valeur de chaque dé. 
+# Si la somme est supérieure ou égale à 10, alors vous devez payer une taxe spéciale 
+# (36 pièces). Sinon, vous payez deux fois la somme des valeurs des deux dés. 
+# Votre programme devra afficher selon le cas le texte « Taxe spéciale ! » ou 
+# bien « Taxe régulière », puis la somme à payer (sans indiquer l'unité).
+# 
+# Exemples
+# Exemple 1
+# entrée :
+# 5
+# 6
+# sortie :
+# Taxe spéciale !
+# 36
+# Exemple 2
+# entrée :
+# 4
+# 3
+# sortie :
+# Taxe régulière
+# 14
+#=========================================================================================
+resultatLancerDes1 = int(input())
+resultatLancerDes2 = int(input())
+if (resultatLancerDes1 + resultatLancerDes2) >= 10:
+    print("Taxe Speciale !")
+    print(36);
+else:
+    print("Taxe reguliére")
+    print((resultatLancerDes1 + resultatLancerDes2)*2)
+
+#=========================================================================================
+# correction en java
+#=========================================================================================
+public class TraverseeDuPont {
+
+    /**
+     * @description
+     *
+     * @return void
+     *
+     * @method main
+     * @class TraverseeDuPont
+     * @version 1.0
+     * @date mercredi 04 sept. 2019
+     * @see
+     *
+     **/
+    public static void main(String[] args) {
+        Scanner keyboardInput = new Scanner(System.in);
+        int resultatLancerDes1 = keyboardInput.nextInt();
+        int resultatLancerDes2 = keyboardInput.nextInt();
+        if ((resultatLancerDes1 + resultatLancerDes2) >= 10) {
+            System.out.println("Taxe spéciale !");
+            System.out.println(36);
+        } else {
+            System.out.println("Taxe régulière");
+            System.out.println((resultatLancerDes1 + resultatLancerDes2) * 2);
+
+        }
+
+    }
+
 }
 
 
@@ -1330,7 +1405,7 @@ print( "Poids total pour l'équipe 2 :", totalÉquipe2 )
 
 import algorea.Scanner
 
-
+# //correction java
 class Main {
 static Scanner entrée = new Scanner(System.in )
 public static void main(String[] args) {
@@ -1368,7 +1443,7 @@ else:
 
 import algorea.Scanner
 
-
+# //correction java
 class Main {
 static Scanner entrée = new Scanner(System.in )
 public static void main(String[] args) {
@@ -1402,6 +1477,177 @@ if codeUtilisateur != 64741:
     print( "Allez-vous en !" )
 else:
     print( "Bon festin !" )
+#=========================================================================================
+# Villes et villages
+#=========================================================================================
+#=========================================================================================
+# Au cours de votre périple, vous traversez de nombreux lieux habités. Pour chacun 
+# d'entre eux, vous notez soigneusement sa population. Après quelques semaines de 
+# voyage, vous avez vraiment l'impression qu'il y beaucoup de villages et très peu de villes.
+# 
+# Ce que doit faire votre programme :
+# On vous donne le nombre d'habitants d'un certain nombre de lieux que vous visitez.
+#  Une ville étant un lieu dont la population est strictement supérieure à 10 000 habitants,
+#   déterminez combien de lieux sont des villes.
+# 
+# Votre programme doit lire un entier : le nombre de lieux. Il doit ensuite lire, pour 
+# chaque lieu, un entier donnant le nombre de gens qui y habitent. Votre programme doit 
+# alors afficher le nombre de villes.
+# 
+# Exemple
+# entrée :
+# 
+# 6
+# 1000
+# 5000
+# 15000
+# 4780
+# 0
+# 23590
+# sortie :
+# 
+# 2
+#=========================================================================================
+nombreDeLieux = int(input())
+res=0
+for i in range(nombreDeLieux):
+    nbreHabitant = int(input())
+    if nbreHabitant>10000:
+       res=res+1
+print(res)
+
+#=========================================================================================
+# correction
+#=========================================================================================
+
+nbLieux = int(input())
+nbVilles = 0
+for loop in range(nbLieux):
+   population = int(input())
+   if population > 10 * 1000:
+      nbVilles = nbVilles + 1
+print(nbVilles)
+
+#=========================================================================================
+# correction java
+#=========================================================================================
+import algorea.Scanner;
+class Main
+{
+   public static void main(String[] args)
+   {
+      Scanner entrée = new Scanner(System.in);
+      int nbLieux = entrée.nextInt();
+      int nbVilles = 0;
+      for (int loop = 1; loop <= nbLieux; loop = loop + 1)
+      {
+         int population = entrée.nextInt();
+         if (population > 10 * 1000)
+         {
+            nbVilles = nbVilles + 1;
+         }
+      }
+      System.out.println(nbVilles);
+   }
+}
+
+
+#=========================================================================================
+# Calcul des déniveléesEntraînement
+#=========================================================================================
+#=========================================================================================
+# Aujourd'hui c'est l'étape de montagne et vous allez devoir franchir plusieurs cols.
+# Vous allez passer votre temps à monter, descendre, remonter, redescendre, etc... Vous
+#  décidez de noter les différentes variations d'altitudes, afin de pouvoir calculer à la
+#   fin de la journée quelle est la dénivelée totale que vous avez montée ainsi que la
+#    dénivelée totale que vous avez descendue (les deux valeurs peuvent être différentes
+#          car vous ne retournez pas à votre point de départ).
+# 
+# Ce que doit faire votre programme :
+# Votre programme lira d'abord un entier représentant le nombre de montées et descentes
+#  que vous avez réalisées. Pour chaque montée ou descente, il faut ensuite lire un entier
+#   représentant la variation d'altitude, cet entier étant strictement positif dans le cas
+#    d'une montée et strictement négatif dans le cas d'une descente (il n'y a rien à compter
+#     pour les tronçons qui sont bien à plat). Votre programme devra afficher l'altitude 
+#     totale montée puis l'altitude totale descendue (ces deux nombres sont positifs).
+# 
+# Exemple
+# entrée :
+# 
+# 5
+# 4
+# 7
+# -6
+# -3
+# 2
+# sortie :
+# 
+# 13
+# 9
+#=========================================================================================
+monteeDecsente = int(input())
+ 
+totalMontee = 0
+totalDescente = 0
+ 
+for loop in range(monteeDecsente):
+   altitude = int(input())
+    
+   if altitude > 0:
+      totalMontee = totalMontee + altitude
+   else :
+      totalDescente = totalDescente + (-altitude)
+print(totalMontee)
+print(totalDescente)
+#=========================================================================================
+# print(cumulM , end="")
+# print(cumulD, end="")
+#=========================================================================================
+
+#=========================================================================================
+# correction
+#=========================================================================================
+nbVariations = int(input())
+sommePos = 0
+sommeNeg = 0
+for loop in range(nbVariations):
+   variation = int(input())
+   if variation > 0:
+      sommePos = sommePos + variation
+   else:
+      sommeNeg = sommeNeg - variation
+print(sommePos)
+print(sommeNeg)
+#=========================================================================================
+# correction java
+#=========================================================================================
+import algorea.Scanner;
+class Main
+{
+   public static void main(String[] args)
+   {
+      Scanner entrée = new Scanner(System.in);
+      int nbVariations = entrée.nextInt();
+      int sommePos = 0;
+      int sommeNeg = 0;
+      for (int loop = 1; loop <= nbVariations; loop = loop + 1)
+      {
+         int variation = entrée.nextInt();
+         if (variation > 0)
+         {
+            sommePos = sommePos + variation;
+         }
+         else
+         {
+            sommeNeg = sommeNeg - variation;
+         }
+      }
+      System.out.println(sommePos);
+      System.out.println(sommeNeg);
+   }
+}
+
+
 
 # ////////////////////////////////////////////////////////////////
 # Votre programme doit d'abord lire un entier décrivant votre position actuelle
@@ -1438,26 +1684,13 @@ print( nbAccessibles )
 
 import algorea.Scanner
 
-
-class Main
-
-
-    {
-        public
-    static
-    void
-    main( String[]
-    args)
-    {
-        Scanner
-    entrée = new
-    Scanner( System. in )
-    int
-    posActuelle = entrée.nextInt()
-    int
-    nbVillages = entrée.nextInt()
-    int
-    nbAccessibles = 0
+# //correction java
+class Main   {
+        public    static    void    main( String[]    args)    {
+        Scanner    entrée = new    Scanner( System. in )
+    int    posActuelle = entrée.nextInt()
+    int    nbVillages = entrée.nextInt()
+    int    nbAccessibles = 0
     for (int loop = 1; loop <= nbVillages; loop = loop + 1)
     {
         int posVillage = entrée.nextInt()
@@ -1474,8 +1707,217 @@ class Main
     System.out.println(nbAccessibles)
     }
     }
+#=========================================================================================
+# Étape la plus longue
+#=========================================================================================
+#=========================================================================================
+# Dans votre petit carnet de voyage, vous avez noté la distance que vous avez parcourue 
+# chaque jour. Aujourd'hui, vous êtes particulièrement en forme et vous décidez donc de 
+# marcher plus que les jours précédents. Vous souhaitez utiliser un programme pour déterminer
+#  quel est votre record pour l'instant.
+# 
+# Ce que doit faire votre programme :
+# Votre programme doit d'abord lire un entier strictement positif, le nombre de jours de
+#  marche effectués jusqu'à présent. Il doit ensuite lire, pour chaque jour, la distance 
+#  parcourue ce jour-là. Il doit alors afficher la distance maximale parcourue en une journée.
+# 
+# Exemple
+# entrée :
+# 
+# 6
+# 36
+# 14
+# 38
+# 28
+# 29
+# 31
+# sortie :
+# 
+# 38
+#=========================================================================================
+nbreJourMarche=int(input())
+max=0
+for i in range(nbreJourMarche):
+    distanceparcourue=int(input())
+    if distanceparcourue>max:
+        max=distanceparcourue
+print(max)     
 
+#=========================================================================================
+# correction   
+#=========================================================================================
+nbJours = int(input())
+distanceMax = 0
+for loop in range(nbJours):
+   distance = int(input())
+   if distance > distanceMax:
+      distanceMax = distance
+print(distanceMax)
 
+#=========================================================================================
+# correction java
+#=========================================================================================
+import algorea.Scanner;
+class Main
+{
+   public static void main(String[] args)
+   {
+      Scanner entrée = new Scanner(System.in);
+      int nbJours = entrée.nextInt();
+      int distanceMax = 0;
+      for (int loop = 1; loop <= nbJours; loop = loop + 1)
+      {
+         int distance = entrée.nextInt();
+         if(distance > distanceMax)
+         {
+            distanceMax = distance;
+         }
+      }
+      System.out.println(distanceMax);
+   }
+}
+
+#=========================================================================================
+# #=========================================================================================
+# # Protection du village Entraînement
+# #=========================================================================================
+# Le village dans lequel vous avez passé la nuit est en pleine effervescence au matin : 
+# encore une attaque de worgs pendant la nuit ! Les worgs sont de redoutables loups qui
+#  vivent sur Algoréa et qui s'attaquent au bétail... et parfois même aux enfants.
+# 
+# C'est décidé, il va falloir construire une grande palissade tout autour du village. 
+# Les habitants insistent pour que cette clôture soit rectangulaire et ait une face au Nord,
+#  une au Sud, une à l'Est et une à l'Ouest, quitte à devoir travailler un peu plus que
+# nécessaire. Ils ont maintenant besoin de votre aide pour savoir la quantité de bois dont 
+# ils vont avoir besoin pour construire cette palissade.
+# 
+# Ce que doit faire votre programme :
+# Le programme doit d'abord lire un entier strictement positif correspondant au nombre 
+# de maisons. Ensuite, pour chaque maison, il doit lire la position horizontale 
+# (l'abscisse, le "x") et sa position verticale (l'ordonnée, le "y") de cette maison. 
+# Toutes les abscisses et ordonnées sont des entiers compris entre zéro et 1 million.
+# 
+# Le programme doit alors afficher le périmètre de la plus petite clôture rectangulaire
+#  englobant toutes les maisons. Ce rectangle doit avoir ses côtés parallèles aux axes
+#   du repère, comme montré sur l'illustration.
+# 
+# Représentation du premier exemple
+# Représentation graphique du premier exemple
+# Exemple
+# entrée :
+# 
+# 4
+
+# 1
+# 5
+
+# 5
+# 3
+
+# 4
+# 6
+
+# 2
+# 9
+# sortie :
+# 
+# 20
+#=========================================================================================
+nbreMaison=int(input())
+xmax=0
+ymax=0
+xmin=10000000
+ymin=10000000
+for loop in range(nbreMaison):
+    x = int(input())
+    y = int(input())
+
+    xmax = max(x, xmax)
+    xmin = min(x, xmin)
+    ymax = max(y, ymax)
+    ymin = min(y, ymin)
+print(xmax)
+print(xmin)
+print(ymax)
+print(ymin)
+largeur = ymax - ymin
+hauteur = xmax - xmin
+print(largeur*2 + hauteur*2)   
+    
+
+#=========================================================================================
+# correction    
+#=========================================================================================
+nbMaisons = int(input())
+xMin = 1000 * 1000
+xMax = 0
+yMin = 1000 * 1000
+yMax = 0
+for loop in range(nbMaisons):
+   posX = int(input())
+   posY = int(input())
+   if posX < xMin:
+      xMin = posX
+   if posX > xMax:
+      xMax = posX
+   if posY < yMin:
+      yMin = posY     
+   if posY > yMax:
+      yMax = posY
+      
+largeur = xMax - xMin
+hauteur = yMax - yMin
+perimetre = 2 * (largeur + hauteur)
+print(perimetre)
+
+#=========================================================================================
+# correction java
+#=========================================================================================
+import algorea.Scanner;
+class Main
+{
+   public static void main(String[] args)
+   {
+      Scanner entrée = new Scanner(System.in);
+      int nbMaisons = entrée.nextInt();
+      
+      int infini = 1000 * 1000;
+      int xMin = infini, xMax = 0, yMin = infini, yMax = 0;
+      
+      for (int loop = 1; loop <= nbMaisons; loop = loop + 1)
+      {
+         int posX = entrée.nextInt();
+         int posY = entrée.nextInt();
+         if(posX < xMin)
+         {
+            xMin = posX;
+         }
+         if(posX > xMax)
+         {
+            xMax = posX;
+         }
+         if(posY < yMin)
+         {
+            yMin = posY;   
+         }
+         if(posY > yMax)
+         {
+            yMax = posY;
+         }
+      }     
+      int largeur = xMax - xMin, hauteur = yMax - yMin;
+      int périmètre = 2 * (largeur + hauteur);
+      System.out.println(périmètre);
+   }
+}
+    
+    
+    
+    
+
+#=========================================================================================
+# Le juste prix
+#=========================================================================================
 # ////////////////////////////////////////////////////////////////
 # Votre programme doit lire un entier nbMarchands (non nul) puis les nbMarchands
 # entiers suivants, qui indiquent le prix des galettes chez chaque marchand,
@@ -1511,7 +1953,7 @@ print( posMinPrix )
 
 import algorea.Scanner
 
-
+# //correction java
 class Main
 
 
@@ -1550,7 +1992,7 @@ class Main
 
 import algorea.Scanner
 
-
+# //correction java
 class Main
 
 
@@ -1583,9 +2025,477 @@ class Main
     }
     }
 
+#=========================================================================================
+# ICI debut Conditions avancées, opérateurs booléens
+#=========================================================================================
+#=========================================================================================
+# L'arrivée à la capitale
+#=========================================================================================
+ 
+#=========================================================================================
+# 1) Espion étranger
+#=========================================================================================
+
+TODO
+
+
+
+
+#=========================================================================================
+# Maison de l'espionEntraînement
+#=========================================================================================
+#=========================================================================================
+# On sait qu'un espion est présent dans la ville mais, grâce à des recoupements d'informations, 
+# il a été possible de déterminer que l'espion était forcément dans une certaine zone de la ville.
+#  Le gouverneur va donc envoyer des soldats fouiller chaque maison et interroger les habitants.
+#   Afin de pouvoir estimer combien de temps va durer l'opération, il souhaiterait savoir 
+#   combien de maisons sont présentes dans la zone en question.
+# 
+# Ce que doit faire votre programme :
+# On vous décrit une zone de recherche rectangulaire, parallèle aux axes, puis la position 
+# d'un certain nombre de maisons. Écrivez un programme qui détermine combien de maisons sont 
+# dans cette zone.
+# 
+# Votre programme devra lire, dans l'ordre : l'abscisse minimale, l'abscisse maximale, 
+# l'ordonnée minimale et l'ordonnée maximale du rectangle. Il lira ensuite le nombre total
+#  de maisons, puis pour chaque maison, son abscisse et son ordonnée.
+# 
+# Votre programme devra déterminer puis afficher le nombre de maisons qui se trouvent dans
+#  la zone de recherche. Si une maison est exactement sur le bord de la zone, elle doit ête
+#   comptée.
+# 
+# Sur l'exemple suivant, il y a 12 maisons, dont 5 sont dans la zone de recherche (en bleu) : 
+# Plan explicatif
+# 
+# Exemple
+# entrée :
+# 
+# 1
+# 4
+# 1
+# 8
+
+# 12
+
+# 1
+# 7
+
+# 1
+# 9
+
+# 2
+# 3
+
+# 3
+# 2
+
+# 3
+# 4
+
+# 3
+# 6
+
+# 3
+# 9
+
+# 5
+# 3
+
+# 5
+# 8
+
+# 7
+# 5
+
+# 8
+# 2
+
+# 8
+# 8
+# sortie :
+# 
+# 5
+#=========================================================================================
+
+xmin=int(input())
+xmax=int(input())
+ymin=int(input())
+ymax=int(input())
+nb_total_maison = int(input())
+nb_maison = 0
+for i in range(nb_total_maison):
+   x_maison = int(input())
+   y_maison = int(input())
+   if (xmin <= x_maison  <= xmax) and (ymin <= y_maison <= ymax) : 
+         nb_maison += 1
+print(nb_maison)
+
+
+#=========================================================================================
+# correction
+#=========================================================================================
+xMin = int(input())
+xMax = int(input())
+yMin = int(input())
+yMax = int(input())
+nbMaisons = int(input())
+nbAFouiller = 0
+for loop in range(nbMaisons):
+   x = int(input())
+   y = int(input())
+   if (xMin <= x) and (x <= xMax) and (yMin <= y) and (y <= yMax):
+      nbAFouiller = nbAFouiller + 1
+print(nbAFouiller)
+
+#=========================================================================================
+# correction java
+#=========================================================================================
+import algorea.Scanner;
+class Main
+{
+   public static void main(String[] args)
+   {
+      Scanner entrée = new Scanner(System.in);
+      int xMin = entrée.nextInt();
+      int xMax = entrée.nextInt();
+      int yMin = entrée.nextInt();
+      int yMax = entrée.nextInt();
+      int nbMaisons = entrée.nextInt();
+      int nbAFouiller = 0;
+      
+      for (int loop = 1; loop <= nbMaisons; loop = loop + 1)
+      {
+         int x = entrée.nextInt();
+         int y = entrée.nextInt();
+         if( (xMin <= x) && (x <= xMax) && (yMin <= y) && (y <= yMax))
+         {
+            nbAFouiller = nbAFouiller + 1;
+         }
+      }
+      System.out.println(nbAFouiller);
+   }
+}
+
+#=========================================================================================
+# Nombre de jours dans le moisEntraînement
+#=========================================================================================
+#=========================================================================================
+# Les soldats de la garnison de la ville sont payés à la journée et pas au mois, ce qui fait que leur salaire n'est pas le même selon le mois. Le trésorier étant malade et les soldats voulant être payés vous vous proposez pour le remplacer. Certains soldats revenant de mission à l'extérieur, ils doivent recevoir leur paye pour les mois précédents également. Afin de ne pas faire d'erreur, vous décidez d'écrire un programme pour vous aider.
+# 
+# Ce que doit faire votre programme :
+# Écrivez un programme qui lit un numéro de mois algoréen, et affiche le nombre de jours de celui-ci. Les Algoréens disposent de leur propre calendrier. Voici les informations dont vous avez besoin :
+# 
+# Numéro du mois    Nombre de jours
+# 1    30
+# 2    30
+# 3    30
+# 4    31
+# 5    31
+# 6    31
+# 7    30
+# 8    30
+# 9    30
+# 10    31
+# 11    29
+# Exemple
+# entrée :
+# 
+# 6
+# sortie :
+# 
+# 31
+#=========================================================================================
+
+#=========================================================================================
+# tableauCalendrierAlgoreen = [[] for i in range( 12 )]
+#=========================================================================================
+# for i in tableauCalendrierAlgoreen:
+#     tableauCalendrierAlgoreen[0]=30
+#     tableauCalendrierAlgoreen[1]=29
+#     tableauCalendrierAlgoreen[2]=31
+#     tableauCalendrierAlgoreen[3]=28
+#     for j in tableauCalendrierAlgoreen:
+#         tableauCalendrierAlgoreen[0]=1,30
+#         tableauCalendrierAlgoreen[1]=2
+#         tableauCalendrierAlgoreen[2]=3
+#         tableauCalendrierAlgoreen[3]=4
+#=========================================================================================
+#=========================================================================================
+# tableau avec tuple automatique et incrementale        
+#=========================================================================================
+numeroMois=int(input())
+numeroMois=numeroMois-1
+tableauCalendrierAlgoreen = [30, 30, 30, 31, 31, 31, 30, 30, 30,31, 29]
+#=========================================================================================
+# for i, elt in enumerate(tableauCalendrierAlgoreen):
+#=========================================================================================
+    #=====================================================================================
+    # print("À l'indice {} se trouve {}.".format(i, elt))
+    # print("{}{}".format(numeroMois, elt))
+    #=====================================================================================
+print(tableauCalendrierAlgoreen[numeroMois])
+
+
+#=========================================================================================
+# correction
+#=========================================================================================
+numero = int(input())
+if numero == 11:
+   print(29)
+else:
+   if ( (4 <= numero) and (numero <= 6) ) or (numero == 10):
+      print(31)
+   else:
+      print(30)
+      
+#=========================================================================================
+# correction java
+#=========================================================================================
+import algorea.Scanner;
+class Main
+{
+   public static void main(String[] args)
+   {
+      Scanner entrée = new Scanner(System.in);
+      int numéro = entrée.nextInt();
+       
+      if(numéro == 11)
+      {
+         System.out.println("29");
+      }
+      else
+      {
+         if( ( (4 <= numéro) && (numéro <= 6) ) || (numéro == 10) )
+         {
+            System.out.println("31");
+         }
+         else
+         {
+            System.out.println("30");
+         }
+      }
+   }
+}
+
+#=========================================================================================
+# Amitié entre gardesEntraînement
+#=========================================================================================
+#=========================================================================================
+# Comme dans tout métier, certains soldats sont devenus amis, et on peut facilement dire 
+# si deux soldats sont amis : si à un moment ils sont de garde en même temps alors ils 
+# sont amis, sinon ils ne le sont pas. Afin de développer les relations amicales entre les
+#  soldats, le colonel en charge des tours de garde souhaiterait autant que possible mettre
+#   en binôme des soldats qui ne sont pas encore amis. Il vous demande votre aide pour
+#    déterminer si deux soldats sont amis ou pas.
+# 
+# Ce que doit faire votre programme :
+# Vous devez écrire un programme qui détermine si deux soldats ont été de garde en même temps.
+# 
+# Votre programme doit lire quatre entiers : la date du début et la date de fin (incluse) du
+#  service du premier soldat puis celles du second soldat.
+# 
+# Si les deux soldats ont, à un moment (même une seule seconde), été de garde en même temps
+#  le programme devra écrire "Amis" et sinon "Pas amis".
+# Exemple 1
+# entrée :
+# 2
+# 5
+# 3
+# 6
+# sortie :Amis
+# Exemple 2
+# 
+# entrée :
+# 1
+# 5
+# 10
+# 15
+# sortie :Pas amis
+# 
+# Exemple 3
+# 
+# entrée :
+# 2
+# 4
+# 4
+# 6
+# sortie :Amis
+#=========================================================================================
+
+dateDebut1 = int(input())
+dateFin1 = int(input())
+dateDebut2 = int(input())
+dateFin2 = int(input())
+
+if (dateFin2 > dateDebut1 and dateFin1 >= dateFin2)or(dateFin2 > dateDebut1 and dateFin1 >=dateDebut2):
+    print("Amis")
+else:
+    print("Pas amis")
+    
+#=========================================================================================
+# correction
+#=========================================================================================
+dateDebutPremier = int(input())
+dateFinPremier = int(input())
+dateDebutSecond = int(input())
+dateFinSecond = int(input())
+if (dateFinSecond < dateDebutPremier) or (dateFinPremier < dateDebutSecond):
+   print("Pas amis")
+else:
+   print("Amis")
+   
+#=========================================================================================
+# correction java
+#=========================================================================================
+import algorea.Scanner;
+class Main
+{
+   public static void main(String[] args)
+   {
+      Scanner entrée = new Scanner(System.in);
+      int dateDébutPremier = entrée.nextInt();
+      int dateFinPremier = entrée.nextInt();
+      int dateDébutSecond = entrée.nextInt();
+      int dateFinSecond = entrée.nextInt();
+       
+      if ( (dateFinSecond < dateDébutPremier) || (dateFinPremier < dateDébutSecond) )
+      {
+         System.out.println("Pas amis");
+      }
+      else
+      {
+         System.out.println("Amis");
+      }
+   }
+}
+
+    
+#=========================================================================================
+# #=========================================================================================
+# # Nombre de personnes à la fête
+# #=========================================================================================
+# Le gouverneur a organisé une petite fête à laquelle tous les notables étaient invités. 
+# Il souhaiterait à présent faire réaliser une petite affiche vantant le succès de la fête
+# et indiquant en particulier le nombre de personnes présentes au moment le plus intense de la fête.
+# 
+# Ce que doit faire votre programme :
+# On vous décrit les arrivées et départs des participants d'une fête, et votre programme 
+# doit afficher le nombre maximum de personnes qui ont été présentes au même moment. 
+# Chacun des invités est identifié par un numéro.
+# 
+# Le premier entier à lire est nbPersonnes : le nombre total de personnes qui se sont rendues 
+# à la fête. Ensuite, il y a 2 × nbPersonnes entiers à lire, dans l'ordre chronologique 
+# des arrivées et départs. Si l'entier est positif, c'est que la personne de numéro
+#  correspondant vient d'arriver, s'il est négatif, elle vient de partir. Une fois 
+#  qu'une personne est partie, elle ne revient pas.
+# 
+# Votre programme doit déterminer puis afficher le nombre maximum de personnes qui étaient 
+# là simultanément.
+# 
+# Exemple
+# entrée :
+# 
+# 5
+
+# 1
+# 2
+
+# -1
+# 3
+
+# 4
+# -2
+
+# -4
+# 5
+
+# -3
+# -5
+# sortie :
+# 
+# 3
+# Commentaires
+# Au cours de la fête décrite par l'exemple, on a donc les flux suivants :
+# 
+# l'invité n°1 entre ;
+# l'invité n°2 entre ;
+# l'invité n°1 sort ;
+# l'invité n°3 entre ;
+# l'invité n°4 entre ;
+# l'invité n°2 sort…
+# Le nombre de présents est maximal lors de l'arrivée de la personne n°4 : 
+# il y a alors trois invités qui sont arrivés et restés.
+#=========================================================================================
+
+nbPersonnes = int(input())
+nbPresent = 0
+MAxPresent = 0
+for i in range(nbPersonnes * 2):
+    mouvementPersonne = int(input())
+    if mouvementPersonne > 0 :
+          nbPresent = nbPresent + 1
+          if nbPresent > MAxPresent :
+             MAxPresent = nbPresent
+       
+    elif mouvementPersonne <= 0 :
+          nbPresent = nbPresent - 1
+       
+print(MAxPresent)
+   
+   
+   
+#=========================================================================================
+# correction    
+#=========================================================================================
+nbPersonnes = int(input())
+nbMax = 0
+nbActuel = 0
+for loop in range(nbPersonnes * 2):
+   numero = int(input())
+   if numero > 0:
+      nbActuel = nbActuel + 1
+      if nbActuel > nbMax:
+         nbMax = nbActuel
+   else:
+      nbActuel = nbActuel - 1
+print(nbMax)
+#=========================================================================================
+# correction java    
+#=========================================================================================
+import algorea.Scanner;
+class Main
+{
+   public static void main(String[] args)
+   {
+      Scanner entrée = new Scanner(System.in);
+      int nbPersonnes = entrée.nextInt();
+      int nbMax = 0, nbActuel = 0;
+      for (int loop = 1; loop <= nbPersonnes * 2; loop = loop + 1)
+      {
+         int numéro = entrée.nextInt();
+         if(numéro > 0)
+         {
+            nbActuel = nbActuel + 1;
+            if(nbActuel > nbMax)
+            {
+               nbMax = nbActuel;
+            }
+         }
+         else
+         {
+            nbActuel = nbActuel - 1;
+         }
+      }
+      System.out.println(nbMax);
+   }
+}
+
+
 
 # /////////////////////////////////////////////////
-
+#=========================================================================================
+# Casernes de pompiers
+#=========================================================================================
 # Votre programme doit lire la description de plusieurs paires de zones
 # rectangulaires,
     # et pour chacune, déterminer si les deux rectangles s'intersectent.
@@ -1955,44 +2865,164 @@ for loop in range(nbPaires):
    else:
       print("OUI")
 # en java
+package javaProjets;
+
+import java.util.Scanner;
+public class TestAlgo {
+    static Scanner entrée = new Scanner(System.in);
+
+    public static void main(String[] args) {
+
+        {
+
+            int nbPaires = entrée.nextInt();
+            for (int loop = 1; loop <= nbPaires; loop = loop + 1) {
+                int xMin1 = entrée.nextInt();
+                int xMax1 = entrée.nextInt();
+                int yMin1 = entrée.nextInt();
+                int yMax1 = entrée.nextInt();
+                int xMin2 = entrée.nextInt();
+                int xMax2 = entrée.nextInt();
+                int yMin2 = entrée.nextInt();
+                int yMax2 = entrée.nextInt();
+
+                if ((xMax2 <= xMin1) || (xMax1 <= xMin2) || (yMax2 <= yMin1) || (yMax1 <= yMin2)) {
+                    System.out.println("NON");
+                } else {
+                    System.out.println("OUI");
+                }
+            }
+        }
+    }
+}
+
+
+#=========================================================================================
+# #=========================================================================================
+# # Personne disparue
+# #=========================================================================================
+# Un personnage important de la cité n'est pas rentré chez lui hier soir et tout le monde 
+# est à sa recherche. Or tout habitant de la ville a un numéro unique qui lui est associé 
+# et doit signer une sorte de registre quand il sort de la ville. Vous souhaitez savoir si 
+# le registre a été signé, auquel cas il faudra étendre les recherches à l'extérieur de la ville.
+# 
+# Ce que doit faire votre programme :
+# On vous donne un entier, le numéro d'une personne recherchée, puis un entier tailleListe, 
+# et enfin tailleListe entiers parmi lesquels vous devez chercher le numéro de la personne.
+#  Si le numéro est présent dans la liste (il peut l'être plusieurs fois) vous devez afficher 
+#  le texte "Sorti de la ville" sinon "Encore dans la ville".
+# 
+# Exemple
+# entrée :
+# 
+# 42
+# 5
+# 1
+# 7
+# 172
+# 2
+# 41
+# sortie :
+# 
+# Encore dans la ville
+#=========================================================================================
+numeropersonneRecherche=int(input())
+tailleListe=int(input())
+liste=[0]*tailleListe
+situation=0    
+#=========================================================================================
+# print(liste)    
+#=========================================================================================
+for i in range(tailleListe):
+    entierListe=int(input())
+    liste[i]=entierListe
+#=========================================================================================
+# print(liste)    
+#=========================================================================================
+
+#=========================================================================================
+# print(liste[2])
+#=========================================================================================
+
+for i in liste:
+    #=====================================================================================
+    # print(i)
+    #=====================================================================================
+    if(i==numeropersonneRecherche):
+        situation=1
+        #=================================================================================
+        # print(i," sit",situation)
+        #=================================================================================
+       
+        #=================================================================================
+        # print("Sorti de la ville") 
+        #=================================================================================
+    #=====================================================================================
+    # else:  
+    #     situation=2
+    #=====================================================================================
+        #=================================================================================
+        # print("Encore dans la ville")
+        #=================================================================================
+
+if (situation==1):
+    print("Sorti de la ville") 
+elif(situation==0):
+    print("Encore dans la ville")
+    
+    
+#=========================================================================================
+# correction    
+#=========================================================================================
+numeroPersonne = int(input())
+tailleListe = int(input())
+estSorti  = False
+for loop in range(tailleListe):
+   numero = int(input())
+   if numero == numeroPersonne:
+      estSorti = True
+if estSorti:
+   print("Sorti de la ville")
+else:
+   print("Encore dans la ville")
+#=========================================================================================
+# correction  java  
+#=========================================================================================
 import algorea.Scanner;
-
-
 class Main
-    {
-        public
-    static
-    void
-    main( String[]
-    args)
-    {
-        Scanner
-    entrée = new
-    Scanner( System. in );
-    int
-    nbPaires = entrée.nextInt();
-    for (int loop = 1; loop <= nbPaires; loop = loop + 1)
-    {
-        int xMin1 = entrée.nextInt();
-    int xMax1 = entrée.nextInt();
-    int yMin1 = entrée.nextInt();
-    int yMax1 = entrée.nextInt();
-    int xMin2 = entrée.nextInt();
-    int xMax2 = entrée.nextInt();
-    int yMin2 = entrée.nextInt();
-    int yMax2 = entrée.nextInt();
+{
+   public static void main(String[] args)
+   {
+      Scanner entrée = new Scanner(System.in);
+      int numéroPersonne = entrée.nextInt();
+      int tailleListe = entrée.nextInt();
+      boolean estSorti = false;
+      
+      for (int loop = 1; loop <= tailleListe; loop = loop + 1)
+      {
+         int numéro = entrée.nextInt();
+         if(numéro == numéroPersonne)
+         {
+            estSorti = true;
+         }
+      }
+       
+      if(estSorti)
+      {
+         System.out.println("Sorti de la ville");
+      }
+      else
+      {
+         System.out.println("Encore dans la ville");
+      }
+   }
+}
 
-    if ((xMax2 <= xMin1) | | (xMax1 <= xMin2) | | (yMax2 <= yMin1) | | (yMax1 <= yMin2))
-    {
-    System.out.println("NON");
-    }
-    else
-    {
-    System.out.println("OUI");
-    }
-    }
-    }
-    }
+TODO
+
+ #========================================================================================
+ # Zones de couleurs
+ #========================================================================================
 # ********************************
 import random
 # zone de couleur
@@ -2070,7 +3100,7 @@ for loop in range(nbJetons):
 # en java
 import algorea.Scanner;
 
-
+# //correction java
 class Main {
 static Scanner entrée = new Scanner(System.in );
 public static void main(String[] args) {
@@ -2079,7 +3109,7 @@ int nbPoints = entrée.nextInt();
 for (int loop = 1; loop <= nbPoints; loop = loop + 1) {
 int x = entrée.nextInt();
 int y = entrée.nextInt();
-if (x < 0 | | x > 90 | | y < 0 | | y > 70) {
+if (x < 0 || x > 90 || y < 0 || y > 70) {
 System.out.println("En dehors de la feuille");
 } else if (y > 60 & & ((x > 15 & & x < 45) | | (x > 60 & & x < 85))) {
 System.out.println("Dans une zone rouge");
@@ -2148,32 +3178,49 @@ while numMesure < nbMesures and tempValide:
 import algorea.Scanner;
 
 
-class Main {
-static Scanner entrée = new Scanner(System.in );
-public static void main(String[] args) {
-int nbMesures = entrée.nextInt();
-int tempMin = entrée.nextInt();
-int tempMax = entrée.nextInt();
-int numMesure = 0;
-boolean tempValide = true;
+import java.util.Scanner;
 
+/**
+ * @author franck Desmedt
+ *
+ */
+public class TestAlgo {
 
-while (numMesure < nbMesures & & tempValide)
-    {
-        int
-    température = entrée.nextInt();
-    tempValide = (tempMin <= température & & température <= tempMax);
-    if (tempValide) {
-    System.out.println("Rien à signaler");
+    /**
+     * @description
+     *
+     * @return void
+     *
+     * @method main
+     * @class TestAlgo
+     * @version 1.0
+     * @date lundi 02 sept. 2019
+     * @see
+     *
+     **/
+    static Scanner entrée = new Scanner(System.in);
+
+    public static void main(String[] args) {
+
+        int nbMesures = entrée.nextInt();
+        int tempMin = entrée.nextInt();
+        int tempMax = entrée.nextInt();
+        int numMesure = 0;
+        boolean tempValide = true;
+
+        while (numMesure < nbMesures && tempValide) {
+            int température = entrée.nextInt();
+            tempValide = (tempMin <= température && température <= tempMax);
+            if (tempValide) {
+                System.out.println("Rien à signaler");
+            } else {
+                System.out.println("Alerte !!");
+            }
+            numMesure = numMesure + 1;
+        }
     }
-    else {
-    System.out.println("Alerte !!");
-    }
-    numMesure = numMesure + 1;
-    }
+
 }
-}
-
 
 
 
@@ -2231,34 +3278,21 @@ print( nombrePierres )
 # java
 import algorea.Scanner;
 
-
 class Main
-    {
-        public
-    static
-    void
-    main( String[]
-    args)
-    {
-        Scanner
-    entrée = new
-    Scanner( System. in );
-    int
-    nombreMaximumPierres = entrée.nextInt();
-    int
-    nombrePierres = 0;
-    int
-    hauteur = 1;
+  public static void main(String[] args) {
 
+        Scanner entrée = new Scanner(System.in);
+        int nombreMaximumPierres = entrée.nextInt();
+        int nombrePierres = 0;
+        int hauteur = 1;
 
-while (nombrePierres + hauteur * hauteur <= nombreMaximumPierres)
-    {
-        nombrePierres = nombrePierres + hauteur * hauteur;
-    hauteur = hauteur + 1;
+        while (nombrePierres + hauteur * hauteur <= nombreMaximumPierres) {
+            nombrePierres = nombrePierres + hauteur * hauteur;
+            hauteur = hauteur + 1;
+        }
+        System.out.println(hauteur - 1);
+        System.out.println(nombrePierres);
     }
-    System.out.println( hauteur - 1 );
-    System.out.println( nombrePierres );
-}
 }
 
 
