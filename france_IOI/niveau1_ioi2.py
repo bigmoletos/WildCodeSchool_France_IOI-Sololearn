@@ -2036,13 +2036,126 @@ class Main
 # 1) Espion étranger
 #=========================================================================================
 
-TODO
+#=========================================================================================
+# Espion étrangerDécouverte
+# Le gouverneur de la ville vous a convoqué dans son bureau pour une affaire d'une extrême 
+# importance. En effet, un espion étranger s'est introduit dans la ville et il faut 
+# absolument le démasquer. Heureusement, grâce à des informateurs grassement payés,
+#  on sait à quelques jours près à quelle date l'espion est arrivé. Il suffira donc de 
+#  regarder les registres des entrées de la ville puis d'aller interroger toutes les
+#   personnes correspondantes.
+# 
+# Pour avoir une idée de l'ampleur de la tâche, le roi vous a demandé de calculer le nombre 
+# de personnes qu'il faudra interroger.
+# 
+# Ce que doit faire votre programme :
+# On vous donne un intervalle de temps pendant lequel on sait qu'un espion est arrivé, 
+# puis la date d'arrivée d'un certain nombre de personnes. Déterminez combien de ces 
+# personnes peuvent être cet espion.
+# 
+# Votre programme doit d'abord lire deux entiers : la date de début et la date de fin de
+#  l'intervalle pendant lequel on sait que l'espion est arrivé en ville. 
+#  Il doit ensuite lire un entier nbEntrées, 
+#  le nombre total de personnes entrées dans la ville, 
+#  puis les nbEntrées nombres suivants qui 
+#  représentent les dates d'entrée (non triées) des différentes personnes.
+# 
+# Votre programme doit afficher
+#  le nombre de personnes entrées entre les deux dates données, incluses.
+# 
+# Exemple
+# entrée :
+# 
+# 6
+# 10
+# 5
+# 7
+# 11
+# 8
+# 3
+# 6
+# sortie :
+# 
+# 3
+# Commentaires
+# Dans l'exemple, l'espion est entré dans la ville entre le jour 6 et le jour 10, et 5
+#  personnes sont enregistrées dans les données de la ville. Dans le schéma ci-dessous, 
+#  une colonne correspond à un jour (dont le numéro se trouve en haut), et l'intervalle 
+#  est représenté par le segment à bouts ronds :
+# 
+# Schéma de l'exemple
+# L'intervalle est projeté en bleu vers le bas.
+# 
+# Pour chaque personne Pi, on a représenté sa date d'entrée dans la ville avec une barre 
+# (accompagnée du numéro de la personne). On voit que 3 dates se trouvent dans l'intervalle.
+#=========================================================================================
+
+import random
+
+debut=int(input())
+fin=int(input())
+nbEntree=int(input())
+
+#=========================================================================================
+# liste=[0]*6
+#=========================================================================================
+res=0
+for i in range(nbEntree):
+    #=====================================================================================
+    # liste[1]=random.randint(1, 31)
+    # print("liste", liste)    
+    #=====================================================================================
+    dateEntree=int(input())
+    
+    if (debut <= dateEntree <= fin):
+        res += 1
+print( "resultat " ,res  )     
 
 
 
 
 #=========================================================================================
-# Maison de l'espionEntraînement
+# correction
+#=========================================================================================
+dateDébut = int(input())
+dateFin = int(input())
+nbEntrées = int(input())
+nbPersonnes = 0
+for loop in range(nbEntrées):
+   date = int(input())
+   if dateDébut <= date and date <= dateFin:
+      nbPersonnes = nbPersonnes + 1
+print(nbPersonnes)
+#=========================================================================================
+# correction java
+#=========================================================================================
+import algorea.Scanner;
+class Main
+{
+   public static void main(String[] args)
+   {
+      Scanner entrée = new Scanner(System.in);
+      int dateDébut = entrée.nextInt();
+      int dateFin = entrée.nextInt();
+      int nbEntrées = entrée.nextInt();
+      int nbPersonnes = 0;
+      for (int loop = 1; loop <= nbEntrées; loop = loop + 1)
+      {
+         int date = entrée.nextInt();
+         if( (dateDébut <= date) && (date <= dateFin) )
+         {
+            nbPersonnes = nbPersonnes + 1;
+         }
+      }
+      System.out.println(nbPersonnes);
+   }
+}   
+
+
+
+
+#=========================================================================================
+# Maison de l'espion
 #=========================================================================================
 #=========================================================================================
 # On sait qu'un espion est présent dans la ville mais, grâce à des recoupements d'informations, 
@@ -3018,7 +3131,757 @@ class Main
    }
 }
 
-TODO
+#=========================================================================================
+# #=========================================================================================
+# # La grande fête
+# #=========================================================================================
+# Un espion était présent à la grande fête organisée la semaine dernière par le gouverneur. 
+# Bien qu'on n'ait pas pu l'identifier, on a réussi à intercepter son rapport et à estimer
+#  en fonction de ce qu'il a pu voir, à quelle période il a été présent. Sachant pour 
+#  chaque invité sa date d'arrivée et de départ, on aimerait interroger tous les suspects
+#   potentiels. Vous souhaitez savoir combien de suspects il faudra interroger.
+# 
+# Ce que doit faire votre programme :
+# On vous donne une période de temps à étudier, et les dates d'arrivée et de départ d'un 
+# certain nombre d'invités d'une fête. Écrivez un programme qui détermine combien d'invités
+#  ont été présents à un moment de la période étudiée.
+# 
+# Votre programme doit d'abord lire deux entiers : la date de début et la date de fin de
+#  la période étudiée. L'entier suivant, nbInvites, est le nombre total d'invités. Pour
+#   chaque invité, votre programme doit ensuite lire deux entiers : sa date d'arrivée et
+#    de départ. Un invité est suspect si la période à laquelle il a été présent intersecte
+#     la période étudiée. Votre programme doit afficher le nombre d'invités suspects.
+# 
+# Exemple
+# entrée :
+# 
+# 8
+# 12
+# 5
+
+# 4
+# 7
+
+# 2
+# 11
+
+# 3
+# 6
+
+# 1
+# 8
+
+# 14
+# 19
+# sortie :
+# 
+# 2
+#=========================================================================================
+import random
+#=========================================================================================
+# liste = [8, 12, 6]
+#=========================================================================================
+
+liste = [random.randint(2, 30) for offsetPremiereColonne in range(3)]
+#=========================================================================================
+# boucle permettant de forcer la date de fin>date de début
+#=========================================================================================
+while not(liste[0] <= liste[1]):
+     liste = [random.randint(2, 30) for offsetPremiereColonne in range(3)]     
+print(" liste" , liste)
+
+#=========================================================================================
+# debut=int(input())
+# fin=int(input())
+# nbInvite=int(input())
+#=========================================================================================
+
+somme = 0 
+
+debut = liste[0]
+fin = liste[1] 
+nbInvite = liste[2]
+
+#=========================================================================================
+# liste2 = [8, 12, 5,4, 7, 2, 11, 3, 6, 1, 8, 14, 19, 25, 5]
+#=========================================================================================
+j = 0
+#=========================================================================================
+# v=0
+# liste2  = [random.randint( 1, 31) for offsetPremiereColonne in range(nbInvite * 2)]
+# while not(liste2[v]<=liste2[v+1]):
+#     liste2  = [random.randint( 1, 31) for offsetPremiereColonne in range(nbInvite * 2)]
+#     v+=2
+# print(" liste2" , liste2)
+#=========================================================================================
+
+L_size = nbInvite # int to pass to range
+liste2 = []
+for _ in range(L_size):
+#=====================================================================================
+# num = random.random() # create random num and append
+#=====================================================================================
+    
+    num1 = random.randint(1,31) # create random num and append
+    num2 = random.randint(1,31) # create random num and append
+    while not(num2 >= num1):
+        num1 = random.randint(1,31) # create random num and append
+        num2 = random.randint(num2,31) # create random num and append
+        
+    liste2.append(num1)
+    liste2.append(num2)
+print ("liste2",liste2) 
+
+
+for i in range(nbInvite):
+    #=====================================================================================
+    # arrive=int(input())
+    # depart=int(input())
+    #=====================================================================================
+    #=====================================================================================
+    # print("i", i," j", j)
+    #=====================================================================================
+   
+    #=====================================================================================
+    # liste2 = [4, 7, 2, 11, 3, 6, 1, 8, 14, 19, 25, 5]
+    #=====================================================================================
+   
+    arrive = liste2[j]
+    depart = liste2[j + 1]
+    j +=  2
+    #=====================================================================================
+    print("debut ", debut, " fin ", fin, " arrive ", arrive, " depart ", depart)
+    if (((debut <= arrive <= fin) or (debut <= depart <= fin))and (arrive<=debut and depart>=fin)):
+    #=====================================================================================
+    # if not((arrive>=debut and arrive<= fin) or (depart>=debut  and depart<= fin)):
+    #=====================================================================================
+    #=====================================================================================
+    # if not((debut <= arrive and fin >= arrive) or (debut <= depart and fin >= depart)):
+    #=====================================================================================
+        
+    #=====================================================================================
+    # if not(arrive>=debut and depart <= fin):
+    #=====================================================================================
+    #=====================================================================================
+    # if not((fin <= arrive)or (depart <= debut)):
+    #=====================================================================================
+        somme +=  1
+        print("somme", somme)
+print(somme)
+
+#=========================================================================================
+# ****************************************************************
+#=========================================================================================
+
+#=========================================================================================
+#      PYTHON CREATION LISTE ALEATOIRE        
+#  Avec python on peut générer des nombres aléatoires avec le module random. Exemple 
+#  de comment créer une liste de nombres entiers aléatoires avec python
+# 
+#  import random
+#  l = [random.randrange(0, 10) for i in range(20)]
+#  l=[1, 9, 7, 3, 1, 5, 9, 4, 8, 1, 0, 7, 5, 4, 7, 2, 9, 5, 6, 2]
+#  Pour créer une liste de nombres entiers aléatoires unique avec python:
+# 
+# import random
+# l = random.sample(range(1,100), 10)
+#  l=[10, 70, 11, 91, 84, 17, 29, 36, 61, 96]            
+#=========================================================================================
+
+#=========================================================================================
+# VERSION AVEC UNE BOUCLE ET APPEND
+# import random
+# random.seed(0)
+# #=========================================================================================
+# # L_size = int(input("Enter a real number: ")) # int to pass to range
+# #=========================================================================================
+# L_size = 2 # int to pass to range
+# L = []
+# for _ in range(L_size):
+#     #=====================================================================================
+#     # num = random.random() # create random num and append
+#     #=====================================================================================
+#     num = random.random() # create random num and append
+#     L.append(num)
+# print (L)     
+#=========================================================================================
+
+#=========================================================================================
+# *******************************
+#=========================================================================================
+
+
+#=========================================================================================
+# version a soumettre   
+#=========================================================================================
+#=========================================================================================
+# debut=int(input())
+# fin=int(input())
+# nbInvite=int(input())
+# somme=0 
+# 
+# for i in range(nbInvite):
+#     arrive=int(input())
+#     depart=int(input())
+#     if not(debut<=arrive and fin>=arrive) or (debut<=depart and fin>=depart):
+#         somme=somme+1
+# print(somme)
+#=========================================================================================
+
+
+#=========================================================================================
+# correction
+#=========================================================================================
+espionDebut = int(input())
+espionFin = int(input())
+nbInvites = int(input())
+nbSuspects = 0
+for loop in range(nbInvites):
+   debut = int(input())
+   fin = int(input())
+   if not( (espionFin < debut) or (fin < espionDebut) ):
+      nbSuspects = nbSuspects + 1
+print(nbSuspects)
+
+#=========================================================================================
+# correction java
+#=========================================================================================
+import algorea.Scanner;
+class Main
+{
+   public static void main(String[] args)
+   {
+      Scanner entrée = new Scanner(System.in);
+      int espionDébut = entrée.nextInt();
+      int espionFin = entrée.nextInt();
+      int nbInvités = entrée.nextInt();
+       
+      int nbSuspects = 0;
+      for (int loop = 1; loop <= nbInvités; loop = loop + 1)
+      {
+         int début = entrée.nextInt();
+         int fin = entrée.nextInt();
+         if( !( (espionFin < début) || (fin < espionDébut) ) )
+         {
+            nbSuspects = nbSuspects + 1;
+         }
+      }
+      System.out.println(nbSuspects);
+   }
+}
+
+#=========================================================================================
+# L'espion est démasqué !Entraînement
+#=========================================================================================
+#=========================================================================================
+# Grâce à un certain nombre d'informateurs plus ou moins fiables, le chef de la police 
+# a recueilli des indications qui devraient lui permettre enfin de démasquer cet espion
+#  qui lui échappe depuis des semaines. La population de la ville étant relativement importante, 
+#  il vous demande votre aide afin d'automatiser un peu les choses. Vous devez estimer la
+#   probabilité qu'une personne soit un espion.
+# 
+# Ce que doit faire votre programme :
+# Votre programme doit lire entier : un nombre de personnes à considérer. Ensuite, pour chaque 
+# personne, il doit lire son signalement sous la forme de cinq entiers : sa taille en 
+# centimètres, son âge en années, son poids en kilogrammes, un entier valant 1 si la personne 
+# possède un cheval et 0 sinon, et un entier valant 1 si la personne à les cheveux bruns et 0 sinon.
+# 
+# On veut déterminer pour chaque personne à quel point elle correspond aux 5 critères suivants :
+# 
+# il aurait une taille supérieure ou égale à 178 cm et inférieure ou égale à 182 cm ;
+# il aurait au moins 34 ans ;
+# il pèserait strictement moins de 70 kg ;
+# il n'a pas de cheval ;
+# il a les cheveux bruns.
+# Lorsque cela n'est pas précisé explicitement, les inégalités sont au sens large.
+# 
+# Pour chaque personne, vous devez tester tous les critères. S'ils sont vérifiés 
+#tous 
+# les 5, vous devez afficher « Très probable ».
+# Si seulement 3 ou 4 sont vérifiés, vous  devez afficher « Probable ». 
+# Si aucun n'est vérifié, vous devez afficher « Impossible »,
+#  et dans les autres cas, vous devez afficher « Peu probable ».
+# 
+# Exemple
+# entrée :
+# 
+# 1
+# 180
+# 40
+# 65
+# 0
+# 1
+# sortie :
+# 
+# Très probable
+#=========================================================================================
+import random
+nbrePpersonne = int(input())
+#=========================================================================================
+# creation de tableau aléatoire
+#=========================================================================================
+liste=[0]*6
+liste[0]=nbrePpersonne
+for i in range(nbrePpersonne):
+    liste[1]=random.randint(160, 190)
+    liste[2]=random.randint(40, 90)
+    liste[3]=random.randint(50, 95)
+    liste[4]=random.randint(0,1)
+    liste[5]=random.randint(0,1)
+    #=====================================================================================
+    # print("liste", liste)    
+    #=====================================================================================
+
+
+#=========================================================================================
+# for loop in range(nbrePpersonne):
+#=========================================================================================
+    
+    res = 0
+    #=====================================================================================
+    # taille = int(input())
+    # age = int(input())
+    # poids = int(input())
+    # aUnCheval = int(input())
+    # aCheveuxBrun = int(input())
+    #=====================================================================================
+    
+    taille = liste[1]
+    age = liste[2]
+    poids= liste[3]
+    aUnCheval = liste[4]
+    aCheveuxBrun= liste[5]
+    print( " taille 178 <= taille <= 182,/-/" ,"age >= 34,/-/ ","poids < 70 ,/-/","aUnCheval ==0 ,/-/","aCheveuxBrun ==1" )
+    print( " taille" ,taille,"age",age,"poids",poids,"aUnCheval",aUnCheval,"aCheveuxBrun",aCheveuxBrun  )
+    
+    if (178 <= taille <= 182):
+        res += 1
+        print("taille ok")
+        
+    if (age >= 34):
+        res += 1
+        print("age ok")
+        
+    if(poids < 70):
+        res += 1
+        print("poids ok")
+        
+    if (aUnCheval==0):
+        res += 1
+        print("cheval ok")
+       
+    if(aCheveuxBrun==1):
+        print("cheveux ok")
+        res += 1
+    print("res",res)   
+        
+    if(res == 5):
+        print("Très probable")
+    elif (res==3 or res==4):
+        print("Probable")
+    elif(res==1 or res==2):
+        print("Peu probable")
+    else:
+        print("Impossible")
+        
+        
+        
+
+#=========================================================================================
+# correction
+#=========================================================================================
+nbPersonnes = int(input())
+for loop in range(nbPersonnes):
+   nbCriteres = 0
+   taille = int(input())
+   if (178 <= taille) and (taille <= 182):
+      nbCriteres = nbCriteres + 1
+   age = int(input())
+   if age >= 34:
+      nbCriteres = nbCriteres + 1
+   poids = int(input())
+   if poids < 70:
+      nbCriteres = nbCriteres + 1
+   aCheval = int(input())
+   if aCheval == 0:
+      nbCriteres = nbCriteres + 1
+   aLesCheveuxBruns = int(input())
+   if aLesCheveuxBruns == 1:
+      nbCriteres = nbCriteres + 1
+   
+   if nbCriteres == 0:
+      print("Impossible")
+   elif nbCriteres == 5:
+      print("Très probable")
+   elif nbCriteres >= 3:
+      print("Probable")
+   else:
+      print("Peu probable")
+#=========================================================================================
+# correction java
+#=========================================================================================
+
+import algorea.Scanner;
+class Main
+{
+   public static void main(String[] args)
+   {
+      Scanner entrée = new Scanner(System.in);
+      int nbPersonnes = entrée.nextInt();
+    
+      for (int loop = 1; loop <= nbPersonnes; loop = loop + 1)
+      {
+         int taille = entrée.nextInt();
+         int âge = entrée.nextInt();
+         int poids = entrée.nextInt();
+         int aCheval = entrée.nextInt();
+         int aLesCheveuxBruns = entrée.nextInt();
+         
+         int nbCritères = 0;
+         if((178 <= taille) && (taille <= 182))
+         {
+            nbCritères = nbCritères+ 1;
+         }
+         if(âge >= 34)
+         {
+            nbCritères = nbCritères+ 1;
+         }
+         if(poids < 70)
+         {
+            nbCritères = nbCritères+ 1;
+         }
+         if(aCheval == 0)
+         {
+            nbCritères = nbCritères+ 1;
+         }
+         if(aLesCheveuxBruns == 1)
+         {
+            nbCritères = nbCritères+ 1;
+         }
+           
+         if(nbCritères == 0)
+         {
+            System.out.println("Impossible");
+         }
+         else if(nbCritères == 5)
+         {
+            System.out.println("Très probable");
+         }
+         else if(nbCritères >= 3)
+         {
+            System.out.println("Probable");
+         }
+         else
+         {
+            System.out.println("Peu probable");
+         }
+      }
+   }
+}
+#=========================================================================================
+# Département de médecine : contrôle d'une épidémie
+# Afin de pouvoir mieux combattre les différentes épidémies, parfois très graves, qui 
+# se développent régulièrement dans la région, le département de médecine de l'université 
+# a lancé une grande étude. En particulier, les chercheurs s'intéressent à la vitesse de 
+# propagation d'une épidémie et donc à la vitesse à laquelle des mesures sanitaires doivent êtres mises en place.
+# 
+# Ce que doit faire votre programme :
+# Votre programme doit d'abord lire un entier, la population totale de la ville. Sachant
+#  qu'une personne était malade au jour 1 et que chaque malade contamine deux nouvelles
+#   personnes le jour suivant (et chacun des jours qui suivent), vous devez calculer à
+#    partir de quel jour toute la population de la ville sera malade.
+# 
+# Exemples
+# Exemple 1
+# entrée : 3
+# sortie : 2
+# Exemple 2
+# entrée : 10
+# sortie : 4
+# Commentaires
+# On a 1 malade le premier jour, donc 2 nouveaux malades le second jour, soit un total de 
+# 3 malades. On a donc 6 nouveaux malades au troisième jour, soit un total de 9 malades.
+#  On a donc 18 nouveaux malades au quatrième jour, soit…
+#=========================================================================================
+
+#=========================================================================================
+# site donnant un algo avec une suite d'entiers
+# http://oeis.org/search?q=1%2C3%2C9%2C27&sort=&language=&go=Search
+# 1, 3, 9, 27, 81, 243, 729, 2187, 6561, 19683, 59049, 177147, 531441, 1594323
+#=========================================================================================
+
+populationTotaleVille = int(input())
+nbMalade = 1
+jour = 0
+if (populationTotaleVille<=3):
+    jour=2
+    print(jour,"jours avec " , nbMalade,"malades" )
+else:        
+    while (nbMalade <= populationTotaleVille):
+        #=====================================================================================
+        # nbMalade = nbMalade+nbMalade*2
+        #=====================================================================================
+        #=====================================================================================
+        # nbMalade = nbMalade*3
+        #=====================================================================================
+        nbMalade *= 3
+        #=====================================================================================
+        # print(" malades" , nbMalade)
+        #=====================================================================================
+        #=====================================================================================
+        # print(" jour" , jour)
+        #=====================================================================================
+        jour += 1
+    print(jour+1,"jours avec " , nbMalade,"malades" )
+    
+    
+#=========================================================================================
+# correction
+#=========================================================================================
+populationVille = int(input())
+numJour = 1
+nbMalades = 1
+while nbMalades < populationVille:
+   numJour = numJour + 1
+   nbMalades = nbMalades * 3
+print(numJour)
+#=========================================================================================
+# correction java
+#=========================================================================================
+import algorea.Scanner;
+class Main {
+   static Scanner entrée = new Scanner(System.in);
+   public static void main(String[] args) {
+      int populationVille = entrée.nextInt();
+      int numJour = 1;
+      int nbMalades = 1;
+      while (nbMalades < populationVille) {
+         numJour = numJour + 1;
+         nbMalades = nbMalades * 3;
+      }
+      System.out.println(numJour);
+   }
+}
+
+#=========================================================================================
+# **********
+#=========================================================================================
+
+#=========================================================================================
+# Administration : comptes annuels
+# Une grande partie du travail de l'administration de l'université, en plus de gérer 
+# les enseignants, les étudiants, les cours… est de veiller au bon fonctionnement de 
+# l'université et en particulier à ce que les comptes soient bien tenus. En particulier
+#  il faut, une fois par an, faire un bilan annuel des dépenses.
+# 
+# Toutes les dépenses de l'année ont été enregistrées et classées dans une multitude 
+# de dossiers et il faut maintenant calculer la somme de toutes ces dépenses. Mais 
+# personne ne sait exactement combien de dépenses différentes ont été effectuées 
+# durant l'année écoulée !
+# 
+# Ce que doit faire votre programme :
+# Votre programme devra lire une suite d'entiers positifs et afficher leur somme.
+#  On ne sait pas combien il y aura d'entiers, mais la suite se termine toujours par
+#   la valeur -1 (qui n'est pas une dépense, juste un marqueur de fin).
+# 
+# Exemple 1
+# entrée :
+# 1000
+# 2000
+# 500
+# -1
+# sortie :3500
+
+# Exemple 2
+# entrée :-1
+# sortie :0
+#=========================================================================================
+
+valeurEntier=0
+somme=0
+while not(valeurEntier==-1):
+    valeurEntier=int(input())
+    somme+=valeurEntier
+print("somme " ,somme+1 )
+
+#=========================================================================================
+# correction
+#=========================================================================================
+sommeDépenses = 0
+dépense = int(input())
+while dépense != -1:
+   sommeDépenses = sommeDépenses + dépense
+   dépense = int(input())
+print(sommeDépenses)
+
+#=========================================================================================
+# correction java 
+#=========================================================================================
+
+  import algorea.Scanner;
+class Main
+{
+   public static void main(String[] args)
+   {
+      Scanner entrée = new Scanner(System.in);
+      int dépense = entrée.nextInt();
+      int sommeDépenses = 0;
+      while (dépense != -1)
+      {
+         sommeDépenses = sommeDépenses + dépense;
+         dépense = entrée.nextInt();
+      }
+      System.out.println(sommeDépenses);
+   }
+}  
+    
+
+#=========================================================================================
+# *******************
+#=========================================================================================
+
+#=========================================================================================
+# Département de pédagogie : le « c'est plus, c'est moins »
+# Dans une cité commerçante, il est important que les habitants soient forts en calcul 
+# mental afin de pouvoir négocier leurs prix et choisir les meilleurs produits sans se 
+# faire avoir. Le département de pédagogie de l'université a donc été sollicité afin de 
+# mettre au point des exercices stimulants pour les enfants, qui vont les inciter à 
+# travailler leur calcul mental.
+# 
+# Réalisant le potentiel que peut avoir votre robot dans un cadre pédagogique, les 
+# chercheurs vous demandent de mettre au point un programme capable de faire jouer de
+#  manière automatisée un enfant au jeu du « c'est plus, c'est moins » : l'enfant doit
+#   deviner un nombre secret en faisant des propositions, et on lui répond chaque fois 
+#   par « c'est plus » ou « c'est moins », jusqu'à ce qu'il ait trouvé le bon nombre.
+# 
+# L'objectif est bien sûr pour les enfants de trouver le bon nombre le plus rapidement possible !
+# 
+# Ce que doit faire votre programme :
+# Votre programme doit d'abord lire un entier, le nombre que l'enfant devra trouver. Ensuite,
+#  il devra lire les propositions du joueur, 
+#  et afficher à chaque fois le texte « c'est plus » (l'enfant a proposé un nombre trop petit)
+#   ou « c'est moins » (l'enfant a proposé un nombre trop grand) selon les cas, 
+#   et recommencer tant que l'enfant n'a pas trouvé le bon nombre.
+# 
+# À la fin, il faudra afficher le texte « Nombre d'essais nécessaires : »
+#  puis, à la ligne en dessous, le nombre d'essais qui ont été nécessaires.
+# 
+# On vous garantit que l'enfant finira par trouver la bonne valeur !
+# 
+# Exemples
+# Exemple 1
+# entrée :
+# 5
+# 1
+# 2
+# 3
+# 4
+# 5
+# sortie :
+# c'est plus
+# c'est plus
+# c'est plus
+# c'est plus
+# Nombre d'essais nécessaires :
+# 5
+# 
+# Exemple 2
+# entrée :
+# 10
+# 5
+# 15
+# 8
+# 12
+# 11
+# 10
+# sortie :
+# 
+# c'est plus
+# c'est moins
+# c'est plus
+# c'est moins
+# c'est moins
+# Nombre d'essais nécessaires :
+# 6
+# 
+# Exemple 3
+# entrée :
+# -50
+# -80
+# -50
+# sortie :
+# 
+# c'est plus
+# Nombre d'essais nécessaires :
+# 2
+#=========================================================================================
+devineLeChiffre=int(input())
+chiffreEnfant=0
+nbreEssais=0
+
+while (chiffreEnfant!=devineLeChiffre):
+    chiffreEnfant=int(input())
+    if (chiffreEnfant<devineLeChiffre):
+        print("c'est plus")
+    elif (chiffreEnfant>devineLeChiffre):
+        print("c'est moins")
+    nbreEssais+=1       
+print( "Nombre d'essais nécessaires :\n" , nbreEssais )
+    
+    
+#=========================================================================================
+# correction    
+#=========================================================================================
+aDeviner = int(input())
+proposition = int(input())
+nbEssais = 1
+while proposition != aDeviner:
+   if proposition < aDeviner:
+      print("c'est plus")
+   if proposition > aDeviner:
+      print("c'est moins")
+   proposition = int(input())
+   nbEssais = nbEssais + 1
+print("Nombre d'essais nécessaires : ")
+print(nbEssais)
+
+
+
+
+#=========================================================================================
+# correction    java
+#=========================================================================================
+import algorea.Scanner;
+class Main
+{
+   public static void main(String[] args)
+   {
+      Scanner entrée = new Scanner(System.in);
+      int àDeviner = entrée.nextInt();
+      int proposition = àDeviner + 1;
+      int nbEssais = 0;
+      while (proposition != àDeviner)
+      {
+         proposition = entrée.nextInt();
+         if (proposition < àDeviner)
+         {
+            System.out.println("c'est plus");
+         }
+         if (proposition > àDeviner)
+         {
+            System.out.println("c'est moins");
+         }
+         nbEssais = nbEssais + 1;
+      }
+      System.out.println("Nombre d'essais nécessaires : ");
+      System.out.println(nbEssais);
+   }
+}    
+
+
+
+
+
 
  #========================================================================================
  # Zones de couleurs

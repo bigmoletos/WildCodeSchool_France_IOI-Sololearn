@@ -1,129 +1,137 @@
 #=========================================================================================
-# #=========================================================================================
-# # La grande fête
-# #=========================================================================================
-# Un espion était présent à la grande fête organisée la semaine dernière par le gouverneur. 
-# Bien qu'on n'ait pas pu l'identifier, on a réussi à intercepter son rapport et à estimer
-#  en fonction de ce qu'il a pu voir, à quelle période il a été présent. Sachant pour 
-#  chaque invité sa date d'arrivée et de départ, on aimerait interroger tous les suspects
-#   potentiels. Vous souhaitez savoir combien de suspects il faudra interroger.
+# Département de pédagogie : le « c'est plus, c'est moins »
+# Dans une cité commerçante, il est important que les habitants soient forts en calcul 
+# mental afin de pouvoir négocier leurs prix et choisir les meilleurs produits sans se 
+# faire avoir. Le département de pédagogie de l'université a donc été sollicité afin de 
+# mettre au point des exercices stimulants pour les enfants, qui vont les inciter à 
+# travailler leur calcul mental.
+# 
+# Réalisant le potentiel que peut avoir votre robot dans un cadre pédagogique, les 
+# chercheurs vous demandent de mettre au point un programme capable de faire jouer de
+#  manière automatisée un enfant au jeu du « c'est plus, c'est moins » : l'enfant doit
+#   deviner un nombre secret en faisant des propositions, et on lui répond chaque fois 
+#   par « c'est plus » ou « c'est moins », jusqu'à ce qu'il ait trouvé le bon nombre.
+# 
+# L'objectif est bien sûr pour les enfants de trouver le bon nombre le plus rapidement possible !
 # 
 # Ce que doit faire votre programme :
-# On vous donne une période de temps à étudier, et les dates d'arrivée et de départ d'un 
-# certain nombre d'invités d'une fête. Écrivez un programme qui détermine combien d'invités
-#  ont été présents à un moment de la période étudiée.
+# Votre programme doit d'abord lire un entier, le nombre que l'enfant devra trouver. Ensuite,
+#  il devra lire les propositions du joueur, 
+#  et afficher à chaque fois le texte « c'est plus » (l'enfant a proposé un nombre trop petit)
+#   ou « c'est moins » (l'enfant a proposé un nombre trop grand) selon les cas, 
+#   et recommencer tant que l'enfant n'a pas trouvé le bon nombre.
 # 
-# Votre programme doit d'abord lire deux entiers : la date de début et la date de fin de
-#  la période étudiée. L'entier suivant, nbInvites, est le nombre total d'invités. Pour
-#   chaque invité, votre programme doit ensuite lire deux entiers : sa date d'arrivée et
-#    de départ. Un invité est suspect si la période à laquelle il a été présent intersecte
-#     la période étudiée. Votre programme doit afficher le nombre d'invités suspects.
+# À la fin, il faudra afficher le texte « Nombre d'essais nécessaires : »
+#  puis, à la ligne en dessous, le nombre d'essais qui ont été nécessaires.
 # 
-# Exemple
+# On vous garantit que l'enfant finira par trouver la bonne valeur !
+# 
+# Exemples
+# Exemple 1
 # entrée :
+# 5
+# 1
+# 2
+# 3
+# 4
+# 5
+# sortie :
+# c'est plus
+# c'est plus
+# c'est plus
+# c'est plus
+# Nombre d'essais nécessaires :
+# 5
 # 
+# Exemple 2
+# entrée :
+# 10
+# 5
+# 15
 # 8
 # 12
-# 5
-
-# 4
-# 7
-
-# 2
 # 11
-
-# 3
-# 6
-
-# 1
-# 8
-
-# 14
-# 19
+# 10
 # sortie :
 # 
+# c'est plus
+# c'est moins
+# c'est plus
+# c'est moins
+# c'est moins
+# Nombre d'essais nécessaires :
+# 6
+# 
+# Exemple 3
+# entrée :
+# -50
+# -80
+# -50
+# sortie :
+# 
+# c'est plus
+# Nombre d'essais nécessaires :
 # 2
 #=========================================================================================
-import random
-#=========================================================================================
-# liste = [8, 12, 5]
-#=========================================================================================
-liste = [random.randint(2, 30) for offsetPremiereColonne in range(3)]
-while not(liste[0]<=liste[1]):
-     liste = [random.randint(2, 30) for offsetPremiereColonne in range(3)]     
-#=========================================================================================
-# print(" liste" , liste)
-#=========================================================================================
-#=========================================================================================
-# debut=int(input())
-# fin=int(input())
-# nbInvite=int(input())
-#=========================================================================================
-somme = 0 
+devineLeChiffre=int(input())
+chiffreEnfant=0
+nbreEssais=0
 
-debut = liste[0]
-fin = liste[1] 
+while (chiffreEnfant!=devineLeChiffre):
+    chiffreEnfant=int(input())
+    if (chiffreEnfant<devineLeChiffre):
+        print("c'est plus")
+    elif (chiffreEnfant>devineLeChiffre):
+        print("c'est moins")
+    nbreEssais+=1       
+print( "Nombre d'essais nécessaires :\n" , nbreEssais )
+    
+    
+#=========================================================================================
+# correction    
+#=========================================================================================
+aDeviner = int(input())
+proposition = int(input())
+nbEssais = 1
+while proposition != aDeviner:
+   if proposition < aDeviner:
+      print("c'est plus")
+   if proposition > aDeviner:
+      print("c'est moins")
+   proposition = int(input())
+   nbEssais = nbEssais + 1
+print("Nombre d'essais nécessaires : ")
+print(nbEssais)
 
-nbInvite = liste[2]
-j = 0
-for i in range(nbInvite):
-    #=====================================================================================
-    # arrive=int(input())
-    # depart=int(input())
-    #=====================================================================================
-    #=====================================================================================
-    # print("i ", i)
-    #=====================================================================================
-    #=====================================================================================
-    # liste2 = [4, 7, 2, 11, 3, 6, 1, 8, 14, 19]
-    #=====================================================================================
-    liste2  = [random.randint( 1, 31) for offsetPremiereColonne in range(nbInvite * 2)]
-    #=====================================================================================
-    # while not(liste2[j]<=liste2[j+1]):
-    #     liste2  = [random.randint( 1, 31) for offsetPremiereColonne in range(nbInvite * 2)]
-    #=====================================================================================
-    #=====================================================================================
-    # print(" liste2" , liste2)
-    #=====================================================================================
-    j=i
-    arrive = liste2[j]
-    depart = liste2[j + 1]
-    j = j + 2
-    #=====================================================================================
-    # j=j+3
-    #=====================================================================================
-    print("debut ", debut, " fin ", fin, " arrive ", arrive, " depart ", depart)
-    if ((debut <= arrive <= fin) or (debut <= depart <= fin)):
-    #=====================================================================================
-    # if not((arrive>=debut and arrive<= fin) or (depart>=debut  and depart<= fin)):
-    #=====================================================================================
-    #=====================================================================================
-    # if not((debut <= arrive and fin >= arrive) or (debut <= depart and fin >= depart)):
-    #=====================================================================================
-        
-    #=====================================================================================
-    # if not(arrive>=debut and depart <= fin):
-    #=====================================================================================
-    #=====================================================================================
-    # if not((fin <= arrive)or (depart <= debut)):
-    #=====================================================================================
-        somme = somme + 1
-        print("somme", somme)
-print(somme)
-            
+
+
+
 #=========================================================================================
-# version a soumettre   
+# correction    java
 #=========================================================================================
-#=========================================================================================
-# debut=int(input())
-# fin=int(input())
-# nbInvite=int(input())
-# somme=0 
-# 
-# for i in range(nbInvite):
-#     arrive=int(input())
-#     depart=int(input())
-#     if not(debut<=arrive and fin>=arrive) or (debut<=depart and fin>=depart):
-#         somme=somme+1
-# print(somme)
-#=========================================================================================
+import algorea.Scanner;
+class Main
+{
+   public static void main(String[] args)
+   {
+      Scanner entrée = new Scanner(System.in);
+      int àDeviner = entrée.nextInt();
+      int proposition = àDeviner + 1;
+      int nbEssais = 0;
+      while (proposition != àDeviner)
+      {
+         proposition = entrée.nextInt();
+         if (proposition < àDeviner)
+         {
+            System.out.println("c'est plus");
+         }
+         if (proposition > àDeviner)
+         {
+            System.out.println("c'est moins");
+         }
+         nbEssais = nbEssais + 1;
+      }
+      System.out.println("Nombre d'essais nécessaires : ");
+      System.out.println(nbEssais);
+   }
+}    
