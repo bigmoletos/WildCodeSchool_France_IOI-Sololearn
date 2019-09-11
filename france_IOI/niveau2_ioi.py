@@ -1,5 +1,74 @@
-# niveau algo du site france IOI
-# Augmentation des taxes
+# niveau 2 algo du site france IOI
+#=========================================================================================
+#=========================================================================================
+# Origami
+# Des enfants découvrent les joies de l'origami (créer des objets en pliant une feuille 
+# de papier), et l'un d'eux s'amuse à replier sur elle-même une feuille le plus de fois 
+# possible. Il pense qu'il peut replier la feuille en deux 15 fois de suite !
+# 
+# Vous pressentez que cela risque fort d'être impossible. Pendant qu'il essaie, vous
+#  décidez de calculer l'épaisseur qu'aurait son pliage final si par hasard l'enfant 
+#  arrivait à atteindre son objectif.
+# 
+# Ce que doit faire votre programme :
+# L'épaisseur d'une feuille de papier est de 110 micromètres c'est à dire 0,110 millimètres. 
+# Si on la plie 15 fois sur elle-même et que l'épaisseur double à chaque fois, quelle sera
+#  l'épaisseur finale si on l'exprime en centimètres ? Votre programme devra calculer et
+#   afficher cette valeur (qui n'est pas forcément entière).
+#=========================================================================================
+#=========================================================================================
+
+#=========================================================================================
+epaisseurFeuille=0.011 # en cm
+resultat=(epaisseurFeuille*15)/2
+for i in range(15):
+    epaisseurFeuille*=2
+print(round(epaisseurFeuille, 3))
+ 
+ #========================================================================================
+ # correction
+ #========================================================================================
+ epaisseur = 0.11
+for loop in range(15):
+    epaisseur = epaisseur * 2
+print(epaisseur / 10)
+ 
+ 
+ #========================================================================================
+ # correction java
+ #========================================================================================
+class Main
+{
+   public static void main(String[] args)
+   {
+      double épaisseur = 0.11;
+      for (int loop = 1; loop <= 15; loop = loop + 1)
+      {
+         épaisseur = épaisseur * 2;
+      }
+      System.out.println(épaisseur / 10);
+   }
+}
+
+
+
+todo
+
+
+
+
+
+
+
+
+
+
+
+# ******************************
+#=========================================================================================
+#=========================================================================================
+# # Augmentation des taxes
+#=========================================================================================
 # Pour faire face à des difficultés financières du gouvernement,
 # la taxe sur les fruits et légumes a été augmentée.
 # Il faut donc recalculer tous les prix afin de prendre en compte cette nouvelle taxe,
@@ -10,6 +79,8 @@
 # la nouvelle valeur de la taxe (en pourcentage),
 # puis le prix actuel d'un légume, taxes comprises, en euros.
 # Il devra calculer et afficher le prix du légume avec la nouvelle valeur de la taxe, arrondi au centime près.
+
+
 import math
 
 tvaActuelle = float( input() )
