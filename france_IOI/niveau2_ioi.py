@@ -51,6 +51,95 @@ class Main
 }
 
 
+#=========================================================================================
+# Conversions de distances
+# Vous décidez de partir pour quelques jours de randonnée à la montagne.
+#  Le problème est que toutes les distances indiquées sur les panneaux ne le sont pas en 
+#  kilomètres mais en lieues. Vous aimeriez être en mesure de faire les conversions automatiquement.
+# 
+# Ce que doit faire votre programme :
+# Écrivez un programme qui lit un nombre décimal (un nombre à virgule) représentant un 
+# nombre de lieues et affiche le nombre de kilomètres correspondant. Un kilomètre vaut
+#  exactement 0.707 lieues.
+# 
+# Exemple
+# entrée :
+# 
+# 10.5
+# sortie :
+# 
+# 14.8514851485
+#=========================================================================================
+
+breLieu=float(input())
+lieu=0.707
+print(breLieu/lieu)
+
+
+#=========================================================================================
+#=========================================================================================
+# correction4
+#=========================================================================================
+lieues = float(input())
+kilometres = lieues / 0.707
+print(kilometres)
+#=========================================================================================
+#=========================================================================================
+# correction java
+#=========================================================================================
+
+import algorea.Scanner;
+class Main
+{
+   public static void main(String[] args)
+   {
+      Scanner entrée = new Scanner(System.in);
+      double lieues = entrée.nextDouble();
+      System.out.println(lieues / 0.707);
+   }
+}
+
+
+
+#=========================================================================================
+# version fd
+#=========================================================================================
+/**
+ * 
+ *
+ */
+package javaProjets.france_IOI;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+/**
+ * @author franck Desmedt https://github.com/bigmoletos/
+ *
+ */
+public class ConversionDistance {
+
+    /**
+     * @description france_IOI level2/3
+     * @return void
+     *
+     * @method main
+     * @class ConversionDistance
+     * @version 1.0
+     * @date jeudi 12 sept. 2019
+     * @see
+     *
+     **/
+    public static void main(String[] args) {
+        Scanner scan = new Scanner(System.in).useLocale(Locale.US);
+        double nbreLieu = scan.nextDouble();
+        double unLieu = 0.707;
+        double distance = nbreLieu / unLieu;
+        scan.close();
+        System.out.println(distance);
+    }
+
+}
 
 todo
 
@@ -112,14 +201,8 @@ java.lang.Math. *;
 
 class Main
     {
-        public
-    static
-    void
-    main( String[]
-    args)
-    {
-        Scanner
-    entrée = new  Scanner( System. in );
+        public    static    void    main( String[]    args)    {
+        Scanner  entrée = new  Scanner( System. in );
     double   taxeActuelle = entrée.nextDouble();
     double   taxeFuture = entrée.nextDouble();
     double prixLégume = entrée.nextDouble();
@@ -129,6 +212,8 @@ class Main
     System.out.println( nouveauPrix );
     }
     }
+
+
 
     # ************************************************
     # Achat  de livres

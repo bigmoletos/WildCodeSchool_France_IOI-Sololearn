@@ -1,20 +1,32 @@
 #=========================================================================================
-# Conversions de distances
-# Vous décidez de partir pour quelques jours de randonnée à la montagne.
-#  Le problème est que toutes les distances indiquées sur les panneaux ne le sont pas en 
-#  kilomètres mais en lieues. Vous aimeriez être en mesure de faire les conversions automatiquement.
+# Moyenne des notes
+# Des écoliers d'une école voisine aiment bien calculer la moyenne qu'ils vont 
+# avoir sur leur bulletin de notes avant de le recevoir. Cependant, ils ont beaucoup
+#  de notes, et ils aimeraient donc pouvoir utiliser un petit programme pour calculer 
+#  leur moyenne sans se fatiguer.
+# 
+# Le nombre de notes dépend non seulement des matières, mais aussi des possibles 
+# absences de chacun. Aussi, le programme doit être capable de calculer la moyenne 
+# d'un nombre arbitraire de notes. C'est pourquoi vous concevez un programme auquel 
+# il faut d'abord fournir le nombre de notes dont il faut faire la moyenne, 
+# puis fournir les notes elles-mêmes (une par une).
 # 
 # Ce que doit faire votre programme :
-# Écrivez un programme qui lit un nombre décimal (un nombre à virgule) représentant un 
-# nombre de lieues et affiche le nombre de kilomètres correspondant. Un kilomètre vaut
-#  exactement 0.707 lieues.
+# Votre programme doit d'abord lire un premier entier, qui décrit le nombre de notes 
+# obtenues.
+#  Ensuite, il doit lire chacune de ces notes,
+#  qui sont également des nombres entiers. 
+#  Enfin, il doit afficher la moyenne de toutes ces notes.
 # 
 # Exemple
 # entrée :
 # 
-# 10.5
+# 3
+# 10
+# 14
+# 15
 # sortie :
 # 
-# 14.8514851485
+# 13.0
 #=========================================================================================
 
