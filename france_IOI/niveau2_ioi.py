@@ -141,6 +141,134 @@ public class ConversionDistance {
 
 }
 
+#=========================================================================================
+# #=========================================================================================
+# # Comparatif de prix
+# #=========================================================================================
+# Lors du marché hebdomadaire, de nombreux maraîchers viennent vendre de très gros légumes,
+#  en indiquant pour chacun trois informations : son poids, le nombre de jours qui se sont 
+#  écoulés depuis sa cueillette, et son prix.
+# 
+# Il n'est vraiment pas évident de comparer les prix de légumes de différentes tailles,
+#  et des habitants vous demandent de les aider à répondre à cette question. Vous décidez
+#   d'écrire un programme qui calcule le prix au kg de chaque légume à partir des informations disponibles.
+# 
+# Ce que doit faire votre programme :
+# Votre programme doit d'abord lire le nombre de légumes mis en vente. Ensuite, pour chacun,
+#  il doit lire 3 nombres décimaux : son poids,
+#   son âge (en nombre de jours depuis la cueillette),
+#   et son prix de vente. 
+#   Votre programme doit ensuite afficher pour chaque légume
+#    son prix au kg (au fur et à mesure que les légumes sont présentés).
+# 
+# Exemple
+# entrée :
+# 
+# 2
+# 7.0
+# 5.0
+# 14.0
+# 9.5
+# 2.3
+# 7.6
+# sortie :
+# 
+# 2.0
+# 0.8
+#=========================================================================================
+nbreLegumeEnVente = int(input())
+for i in range(nbreLegumeEnVente):
+   poids = float(input())
+   age = float(input())
+   prix = float(input())
+   print(prix / poids)
+
+#=========================================================================================
+# correction
+#=========================================================================================
+nombreLegumes = int(input())
+for loop in range(nombreLegumes):
+   poids = float(input())
+   age = float(input())
+   prix = float(input())
+   print(prix / poids)
+   
+   
+#=========================================================================================
+# correction java   
+#=========================================================================================
+
+import algorea.Scanner;
+class Main
+{
+   public static void main(String[] args)
+   {
+      Scanner entrée = new Scanner(System.in);
+      int nombreLégumes = entrée.nextInt();
+    
+      for (int loop = 1; loop <= nombreLégumes; loop = loop + 1)
+      {
+         double poids = entrée.nextDouble();
+         // âge
+         entrée.nextDouble();
+         double prix = entrée.nextDouble();
+    
+         System.out.println(prix / poids);
+      }
+   }
+}
+
+#=========================================================================================
+# version fd
+#=========================================================================================
+/**
+ * 
+ *
+ */
+package javaProjets.france_IOI;
+
+import java.util.Locale;
+import java.util.Scanner;
+
+/**
+ * @author franck Desmedt https://github.com/bigmoletos/
+ *
+ */
+public class ComparatifPrix {
+
+    /**
+     * @description france_IOI level2 -6
+     * @return void
+     *
+     * @method main
+     * @class ComparatifPrix
+     * @version 1.0
+     * @date jeudi 12 sept. 2019
+     * @see
+     *
+     **/
+    public static void main(String[] args) {
+        Scanner KeyboardInput = new Scanner(System.in).useLocale(Locale.US);
+        int nbreLegumeEnVente = KeyboardInput.nextInt();
+        for (int i = 0; i < nbreLegumeEnVente; i++) {
+
+            double poids = KeyboardInput.nextDouble();
+            double age = KeyboardInput.nextDouble();
+            double prix = KeyboardInput.nextDouble();
+            System.out.println(prix / poids);
+
+        }
+        KeyboardInput.close();
+
+    }
+
+}
+
+#=========================================================================================
+# *************************
+#=========================================================================================
+
+
 todo
 
 
